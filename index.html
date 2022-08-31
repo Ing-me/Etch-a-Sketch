@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Etch a Sketch</h1>
+        <p>Choose a color to start drawing</p>
+    </div>
+    <div class="container">
+        
+        <div class="color-choice">
+            <div class="form">
+                <label for=""> Enter a value for the grid size:</label>
+                <input type="number" name="quantity" id="quantity">
+                <p id="error"></p>
+            </div>
+            <div class="color-grid">
+                <button id="colorPalette" onclick="changeColor('black')">
+                    Black
+                </button>
+                <button id="colorMode" onclick="changeColor('red')">
+                    Red
+                </button>
+                <button id="rainbowMode" onclick="changeColor('linear-gradient(to left,violet,indigo, blue, green,yellow,orange,red)')">
+                    Rainbow 
+                </button>
+                <button id="eraser" onclick="changeColor('white')">
+                    Eraser
+                </button>
+                <button id="reset">
+                    Reset
+                </button>
+            </div>
+        </div>
+        <div class="grid-container">
+
+        </div>
+    </div>
+
+    <script src="js/sketcth.js"></script>
+</body>
+</html>

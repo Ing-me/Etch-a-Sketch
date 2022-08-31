@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.header h1{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 150px 20px 10px;
+    padding: 20px 150px 60px 150px;
+}
+.color-choice{
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ flex-direction: column;
+ width:30%;
+ border: 1px solid #008b8b;
+ padding: 30px;
+ margin: 20px;
+ height: 70vh;
+ box-shadow: 0px 5px 10px 5px #008b8b;
+}
+.form{
+    margin: 10px 0px 20px 5px;
+    border: 1px solid #1de7e7;
+    padding: 15px 15px 15px 15px;
+}
+.color-choice .form label{
+    font-weight: bold;
+    font-size: 14px;
+}
+.color-choice .form button{
+    width: 80px;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+.color-choice .form button:hover{
+    background: #008b8b;
+}
+.form p{
+    font-size: 12px;
+    color: red;
+    padding-top: 3px;
+}
+.color-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-grid > button{
+    border: 1px solid #000;
+    flex:1;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+#colorPalette:hover{
+    color: #fff;
+    background: black;
+}
+#colorMode:hover{
+    background: red;
+    color: #fff;
+   
+}
+
+#rainbowMode:hover{
+    background: linear-gradient(to left,violet,indigo, blue, green,yellow,orange,red);
+}
+#eraser:hover{
+    color:#fff;
+    background: gray;
+}
+.grid-container{
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 20px;
+    display: inline-grid;
+    grid-template-columns: repeat(16,2fr);
+    grid-template-rows: repeat((16, 2fr));
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 960px;
+    border: 1px solid #1de7e7;
+    height: 70vh;
+
+}
+.square{
+    background: white;
+    border: 1px solid rgb(145, 141, 141);
+}
+.color{
+    background: gray;
+    border: 1px solid black;
+}
+
+.rainbow{
+    border: 1px solid black;
+    background: linear-gradient(to left,violet,indigo, blue, green,yellow,orange,red);
+}
+.colorMode{
+    border: 1px solid black;
+    background: red;
+}
+.eraser{
+    background: white;
+    border: 1px solid rgb(145, 141, 141);
+}
