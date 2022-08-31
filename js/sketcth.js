@@ -34,6 +34,7 @@ updateGrid = () => {
             div.classList.add('square');
             gridContainer.appendChild(div);
         }
+        document.querySelector('#error').textContent = '';
     }
     
 };
